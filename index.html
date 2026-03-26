@@ -20,9 +20,7 @@
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="#" class="logo">
-                <div class="logo__img-placeholder" aria-label="Логотип">
-                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="14"/><path d="M10 22 L16 10 L22 22" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </div>
+                <img src="img/logo.svg" alt="Алекса" class="logo__img">
                 <div class="logo__text">
                     <span class="logo__name">АЛЕКСА</span>
                     <span class="logo__tagline">салон красоты</span>
@@ -61,9 +59,11 @@
                     Ваша красота —<br>
                     <span class="hero__title-accent">наше вдохновение</span>
                 </h1>
-                <p class="hero__subtitle">Салон красоты <strong>Алекса</strong> — опытные мастера, уютная атмосфера и доступные цены. Стрижки, окрашивание, маникюр и многое другое.</p>
-                <div class="hero__phone">
-                    <a href="tel:+79878431598" class="hero__phone-link">+7 (987) 843-15-98</a>
+                <p class="hero__subtitle">Салон красоты &laquo;Алекса&raquo; — все виды салонных услуг. Комфортная атмосфера и&nbsp;качественный уход за вашей красотой. Стрижки, окрашивание, маникюр и&nbsp;другие услуги в&nbsp;исполнении опытных мастеров.</p>
+                <div class="hero__phone" id="heroPhone">
+                    <svg class="hero__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span class="hero__phone-sep">:</span>
+                    <span class="hero__phone-number" data-phone="+79878431598" role="button" tabindex="0">+7 (987) 843-15-98</span>
+                    <span class="hero__phone-copied">Скопировано!</span>
                 </div>
                 <div class="hero__actions">
                     <a href="https://wa.me/79878431598" target="_blank" rel="noopener" class="btn btn--hero-action btn--whatsapp">
@@ -100,9 +100,7 @@
                 <div class="hero__decoration">
                     <div class="hero__decoration-circle"></div>
                     <div class="hero__decoration-ring"></div>
-                    <div class="hero__logo-placeholder">
-                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="32" cy="32" r="28"/><path d="M20 44 L32 20 L44 44" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </div>
+                    <img src="img/logo.svg" alt="Алекса" class="hero__decoration-logo">
                 </div>
                 <span class="hero__decoration-name">АЛЕКСА</span>
             </div>
@@ -115,19 +113,10 @@
             <div class="section-header">
                 <span class="section__label">Что мы предлагаем</span>
                 <h2 class="section__title">Наши услуги</h2>
-                <p class="section__subtitle">Полный спектр услуг для вашей красоты в обоих филиалах</p>
+                <p class="section__subtitle">Полный спектр услуг для вашей красоты и ухода.</p>
             </div>
             <div class="services__grid">
                 <div class="service-card" data-delay="0">
-                    <div class="service-card__icon-wrap">
-                        <svg class="service-card__svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 8 C20 8 16 18 16 28 C16 38 24 44 32 44 C40 44 48 38 48 28 C48 18 44 8 44 8"/>
-                            <path d="M24 44 L22 58 M40 44 L42 58"/>
-                            <path d="M18 58 L46 58"/>
-                            <path d="M26 20 C28 16 36 16 38 20"/>
-                            <path d="M24 28 C27 24 37 24 40 28"/>
-                        </svg>
-                    </div>
                     <h3 class="service-card__title">Парикмахерские услуги</h3>
                     <ul class="service-card__list">
                         <li>Женские и мужские стрижки</li>
@@ -143,15 +132,6 @@
                     <div class="service-card__glow"></div>
                 </div>
                 <div class="service-card" data-delay="1">
-                    <div class="service-card__icon-wrap">
-                        <svg class="service-card__svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M32 6 L32 18"/>
-                            <path d="M26 18 L38 18"/>
-                            <path d="M22 22 C22 22 18 36 18 46 C18 52 24 58 32 58 C40 58 46 52 46 46 C46 36 42 22 42 22 L22 22Z"/>
-                            <ellipse cx="32" cy="44" rx="6" ry="5"/>
-                            <path d="M29 42 L35 46 M35 42 L29 46"/>
-                        </svg>
-                    </div>
                     <h3 class="service-card__title">Ногтевой сервис</h3>
                     <ul class="service-card__list">
                         <li>Аппаратный маникюр</li>
@@ -164,17 +144,6 @@
                     <div class="service-card__glow"></div>
                 </div>
                 <div class="service-card" data-delay="2">
-                    <div class="service-card__icon-wrap">
-                        <svg class="service-card__svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <ellipse cx="32" cy="30" rx="20" ry="14"/>
-                            <path d="M18 24 Q24 18 32 18 Q40 18 46 24"/>
-                            <circle cx="22" cy="28" r="3"/>
-                            <circle cx="42" cy="28" r="3"/>
-                            <path d="M26 38 Q32 42 38 38"/>
-                            <path d="M16 18 Q18 10 24 8"/>
-                            <path d="M48 18 Q46 10 40 8"/>
-                        </svg>
-                    </div>
                     <h3 class="service-card__title">Брови и ресницы</h3>
                     <ul class="service-card__list">
                         <li>Коррекция бровей</li>
@@ -184,21 +153,11 @@
                     <div class="service-card__glow"></div>
                 </div>
                 <div class="service-card" data-delay="3">
-                    <div class="service-card__icon-wrap">
-                        <svg class="service-card__svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="32" cy="24" r="12"/>
-                            <path d="M20 24 C20 12 44 12 44 24"/>
-                            <path d="M26 24 C26 20 38 20 38 24"/>
-                            <path d="M16 40 C20 34 26 30 32 30 C38 30 44 34 48 40"/>
-                            <path d="M12 52 C18 42 26 36 32 36 C38 36 46 42 52 52"/>
-                            <circle cx="32" cy="48" r="4"/>
-                        </svg>
-                    </div>
                     <h3 class="service-card__title">Уход и восстановление</h3>
                     <ul class="service-card__list">
                         <li>SPA для головы</li>
                         <li>Прикорневой объём</li>
-                        <li>Холодное восстановление волос</li>
+                        <li>Холодное восстановление</li>
                         <li>Полировка волос</li>
                     </ul>
                     <div class="service-card__glow"></div>
@@ -217,9 +176,7 @@
             </div>
             <div class="prices__grid">
                 <div class="price-table">
-                    <div class="price-table__header">
-                        <h3 class="price-table__title">Парикмахерские услуги</h3>
-                    </div>
+                    <div class="price-table__header"><h3 class="price-table__title">Парикмахерские услуги</h3></div>
                     <div class="price-table__body">
                         <div class="price-table__row"><span>Женская стрижка</span><span class="price-table__value">от 800 &#8381;</span></div>
                         <div class="price-table__row"><span>Мужская стрижка</span><span class="price-table__value">от 500 &#8381;</span></div>
@@ -233,18 +190,14 @@
                     </div>
                 </div>
                 <div class="price-table">
-                    <div class="price-table__header">
-                        <h3 class="price-table__title">Ногтевой сервис</h3>
-                    </div>
+                    <div class="price-table__header"><h3 class="price-table__title">Ногтевой сервис</h3></div>
                     <div class="price-table__body">
                         <div class="price-table__row"><span>Аппаратный маникюр</span><span class="price-table__value">от 800 &#8381;</span></div>
                         <div class="price-table__row"><span>Маникюр + гель-лак</span><span class="price-table__value">от 1 200 &#8381;</span></div>
                         <div class="price-table__row"><span>Наращивание ногтей</span><span class="price-table__value">от 2 500 &#8381;</span></div>
                         <div class="price-table__row"><span>Педикюр</span><span class="price-table__value">от 1 500 &#8381;</span></div>
                     </div>
-                    <div class="price-table__header" style="margin-top: 8px">
-                        <h3 class="price-table__title">Брови и ресницы</h3>
-                    </div>
+                    <div class="price-table__header" style="margin-top:8px"><h3 class="price-table__title">Брови и ресницы</h3></div>
                     <div class="price-table__body">
                         <div class="price-table__row"><span>Коррекция бровей</span><span class="price-table__value">от 300 &#8381;</span></div>
                         <div class="price-table__row"><span>Окрашивание бровей</span><span class="price-table__value">от 400 &#8381;</span></div>
@@ -265,30 +218,16 @@
                 <p class="section__subtitle">Примеры работ наших мастеров</p>
             </div>
             <div class="gallery__grid">
-                <div class="gallery__item gallery__item--tall" data-index="0">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 1</span></div>
-                </div>
-                <div class="gallery__item" data-index="1">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 2</span></div>
-                </div>
-                <div class="gallery__item" data-index="2">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 3</span></div>
-                </div>
-                <div class="gallery__item" data-index="3">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 4</span></div>
-                </div>
-                <div class="gallery__item gallery__item--tall" data-index="4">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 5</span></div>
-                </div>
-                <div class="gallery__item" data-index="5">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 6</span></div>
-                </div>
-                <div class="gallery__item" data-index="6">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 7</span></div>
-                </div>
-                <div class="gallery__item" data-index="7">
-                    <div class="gallery__placeholder"><div class="gallery__placeholder-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div><span>Фото 8</span></div>
-                </div>
+                <div class="gallery__item gallery__item--tall" data-index="0"><img src="img/gallery/1.png" alt="Работа 1" loading="lazy"></div>
+                <div class="gallery__item" data-index="1"><img src="img/gallery/2.png" alt="Работа 2" loading="lazy"></div>
+                <div class="gallery__item" data-index="2"><img src="img/gallery/3.png" alt="Работа 3" loading="lazy"></div>
+                <div class="gallery__item" data-index="3"><img src="img/gallery/4.png" alt="Работа 4" loading="lazy"></div>
+                <div class="gallery__item gallery__item--tall" data-index="4"><img src="img/gallery/5.png" alt="Работа 5" loading="lazy"></div>
+                <div class="gallery__item" data-index="5"><img src="img/gallery/6.png" alt="Работа 6" loading="lazy"></div>
+                <div class="gallery__item" data-index="6"><img src="img/gallery/7.png" alt="Работа 7" loading="lazy"></div>
+                <div class="gallery__item" data-index="7"><img src="img/gallery/8.png" alt="Работа 8" loading="lazy"></div>
+                <div class="gallery__item" data-index="8"><img src="img/gallery/9.png" alt="Работа 9" loading="lazy"></div>
+                <div class="gallery__item" data-index="9"><img src="img/gallery/10.png" alt="Работа 10" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -296,13 +235,9 @@
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">&times;</button>
-        <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Назад">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
+        <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
         <div class="lightbox__main" id="lightboxMain"></div>
-        <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Вперёд">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-        </button>
+        <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg></button>
         <div class="lightbox__thumbs" id="lightboxThumbs"></div>
     </div>
 
@@ -314,64 +249,9 @@
                 <h2 class="section__title">Отзывы клиентов</h2>
                 <p class="section__subtitle">Что говорят о нас на других площадках</p>
             </div>
-            <div class="reviews__track">
-                <div class="review-card">
-                    <div class="review-card__stars">
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                    </div>
-                    <p class="review-card__text">&laquo;Placeholder — здесь будет реальный отзыв клиента с Яндекс Карт. Отличный сервис, приятная атмосфера, мастера знают своё дело!&raquo;</p>
-                    <div class="review-card__footer">
-                        <div class="review-card__avatar">А</div>
-                        <div><div class="review-card__name">Анна К.</div><div class="review-card__source">Яндекс Карты</div></div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-card__stars">
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                    </div>
-                    <p class="review-card__text">&laquo;Placeholder — здесь будет реальный отзыв клиента с 2ГИС. Хожу уже несколько лет, всегда довольна результатом.&raquo;</p>
-                    <div class="review-card__footer">
-                        <div class="review-card__avatar">М</div>
-                        <div><div class="review-card__name">Мария С.</div><div class="review-card__source">2ГИС</div></div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-card__stars">
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                    </div>
-                    <p class="review-card__text">&laquo;Placeholder — здесь будет реальный отзыв клиента. Делала сложное окрашивание — результат превзошёл ожидания!&raquo;</p>
-                    <div class="review-card__footer">
-                        <div class="review-card__avatar">Е</div>
-                        <div><div class="review-card__name">Екатерина Д.</div><div class="review-card__source">Яндекс Карты</div></div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-card__stars">
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.18l-4.77 2.53.91-5.32-3.87-3.77 5.34-.78z"/></svg>
-                    </div>
-                    <p class="review-card__text">&laquo;Placeholder — здесь будет реальный отзыв клиента. Очень довольна маникюром, обязательно приду ещё!&raquo;</p>
-                    <div class="review-card__footer">
-                        <div class="review-card__avatar">О</div>
-                        <div><div class="review-card__name">Ольга В.</div><div class="review-card__source">2ГИС</div></div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="reviews__marquee" id="reviewsMarquee">
+            <div class="reviews__track" id="reviewsTrack"></div>
         </div>
     </section>
 
@@ -396,23 +276,14 @@
                             </div>
                             <div class="branch-card__row">
                                 <svg class="branch-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                                <a href="tel:+79878431598" class="branch-card__phone">+7 (987) 843-15-98</a>
+                                <span class="branch-card__phone">+7 (987) 843-15-98</span>
                             </div>
                         </div>
                         <div class="branch-card__services">
-                            <span class="tag">Стрижки</span>
-                            <span class="tag">Окрашивание</span>
-                            <span class="tag">Кератин</span>
-                            <span class="tag">Маникюр</span>
-                            <span class="tag">Педикюр</span>
-                            <span class="tag">Брови и ресницы</span>
-                            <span class="tag">SPA</span>
-                            <span class="tag">Причёски</span>
+                            <span class="tag">Стрижки</span><span class="tag">Окрашивание</span><span class="tag">Кератин</span><span class="tag">Маникюр</span><span class="tag">Педикюр</span><span class="tag">Брови и ресницы</span><span class="tag">SPA</span><span class="tag">Причёски</span>
                         </div>
                     </div>
-                    <div class="branch-card__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?ll=55.111138%2C51.768199&z=17&l=map&pt=55.111138%2C51.768199%2Cpm2rdm" width="100%" height="300" frameborder="0" allowfullscreen loading="lazy"></iframe>
-                    </div>
+                    <div class="branch-card__map" id="map1"></div>
                 </div>
                 <div class="branch-card">
                     <div class="branch-card__top">
@@ -426,32 +297,22 @@
                             </div>
                             <div class="branch-card__row">
                                 <svg class="branch-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                                <a href="tel:+79878431598" class="branch-card__phone">+7 (987) 843-15-98</a>
+                                <span class="branch-card__phone">+7 (987) 843-15-98</span>
                             </div>
                         </div>
                         <div class="branch-card__services">
-                            <span class="tag">Стрижки</span>
-                            <span class="tag">Окрашивание</span>
-                            <span class="tag">Кератин</span>
-                            <span class="tag">Маникюр</span>
-                            <span class="tag">Педикюр</span>
-                            <span class="tag">Полировка</span>
+                            <span class="tag">Стрижки</span><span class="tag">Окрашивание</span><span class="tag">Кератин</span><span class="tag">Маникюр</span><span class="tag">Педикюр</span><span class="tag">Полировка</span>
                         </div>
                     </div>
-                    <div class="branch-card__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?ll=55.099432%2C51.762297&z=17&l=map&pt=55.099432%2C51.762297%2Cpm2rdm" width="100%" height="300" frameborder="0" allowfullscreen loading="lazy"></iframe>
-                    </div>
+                    <div class="branch-card__map" id="map2"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacts / CTA -->
+    <!-- Contacts -->
     <section class="contacts section" id="contacts">
-        <div class="contacts__bg">
-            <div class="contacts__orb contacts__orb--1"></div>
-            <div class="contacts__orb contacts__orb--2"></div>
-        </div>
+        <div class="contacts__bg"><div class="contacts__orb contacts__orb--1"></div><div class="contacts__orb contacts__orb--2"></div></div>
         <div class="container contacts__inner">
             <div class="section-header">
                 <span class="section__label section__label--light">Свяжитесь с нами</span>
@@ -459,7 +320,9 @@
                 <p class="contacts__text">Выберите удобный способ связи — мы ответим в течение нескольких минут</p>
             </div>
             <div class="contacts__phone-big">
-                <a href="tel:+79878431598">+7 (987) 843-15-98</a>
+                <svg class="contacts__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span class="contacts__phone-sep">:</span>
+                <span class="contacts__phone-number" data-phone="+79878431598" role="button" tabindex="0">+7 (987) 843-15-98</span>
+                <span class="contacts__phone-copied">Скопировано!</span>
             </div>
             <div class="contacts__buttons">
                 <a href="https://wa.me/79878431598" target="_blank" rel="noopener" class="btn btn--hero-action btn--whatsapp btn--lg">
@@ -484,9 +347,7 @@
             <div class="footer__top">
                 <div class="footer__brand">
                     <a href="#" class="logo logo--footer">
-                        <div class="logo__img-placeholder logo__img-placeholder--footer" aria-label="Логотип">
-                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="14"/><path d="M10 22 L16 10 L22 22" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </div>
+                        <img src="img/logo.svg" alt="Алекса" class="logo__img logo__img--footer">
                         <div class="logo__text">
                             <span class="logo__name">АЛЕКСА</span>
                             <p class="footer__brand-sub">Салон красоты в Оренбурге</p>
@@ -494,40 +355,26 @@
                     </a>
                 </div>
                 <div class="footer__links">
-                    <a href="#services">Услуги</a>
-                    <a href="#prices">Цены</a>
-                    <a href="#gallery">Работы</a>
-                    <a href="#reviews">Отзывы</a>
-                    <a href="#branches">Филиалы</a>
-                    <a href="#contacts">Контакты</a>
+                    <a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#gallery">Работы</a><a href="#reviews">Отзывы</a><a href="#branches">Филиалы</a><a href="#contacts">Контакты</a>
                 </div>
                 <div class="footer__socials">
-                    <a href="https://wa.me/79878431598" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    </a>
-                    <a href="https://t.me/+79878692783" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                    </a>
-                    <a href="https://instagram.com/parikmakherskaia_alexa" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener" aria-label="TikTok" class="footer__social">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener" aria-label="VK" class="footer__social">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
-                    </a>
+                    <a href="https://wa.me/79878431598" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    <a href="https://t.me/+79878692783" target="_blank" rel="noopener" aria-label="Telegram" class="footer__social"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                    <a href="https://instagram.com/parikmakherskaia_alexa" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="TikTok" class="footer__social"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="VK" class="footer__social"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg></a>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <p class="footer__copy">&copy; 2025 Салон красоты &laquo;Алекса&raquo;. Все права защищены.</p>
-            </div>
+            <div class="footer__bottom"><p class="footer__copy">&copy; 2025 Салон красоты &laquo;Алекса&raquo;. Все права защищены.</p></div>
         </div>
     </footer>
 
     <!-- Floating CTA -->
     <div class="floating-cta" id="floatingCta">
         <div class="floating-cta__menu" id="floatingMenu">
+            <a href="https://wa.me/79878431598" target="_blank" rel="noopener" class="floating-cta__item floating-cta__item--wa" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
             <a href="https://t.me/+79878692783" target="_blank" rel="noopener" class="floating-cta__item floating-cta__item--tg" aria-label="Telegram">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
             </a>
@@ -536,11 +383,15 @@
             </a>
         </div>
         <button class="floating-cta__btn" id="floatingBtn" aria-label="Способы связи">
-            <svg class="floating-cta__icon floating-cta__icon--wa" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <svg class="floating-cta__icon floating-cta__icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <svg class="floating-cta__icon floating-cta__icon--contact" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26" height="26"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <svg class="floating-cta__icon floating-cta__icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="22" height="22"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
+        <div class="floating-cta__arrow"></div>
     </div>
 
+    <!-- Leaflet for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
