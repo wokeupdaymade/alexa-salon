@@ -25,6 +25,17 @@ document.querySelectorAll('[data-phone]').forEach(el => {
             clearTimeout(toastTimer);
             copyToast.classList.add('show');
             toastTimer = setTimeout(() => copyToast.classList.remove('show'), 2000);
+        }).catch(() => {
+            const ta = document.createElement('textarea');
+            ta.value = el.dataset.phone;
+            ta.style.cssText = 'position:fixed;opacity:0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            clearTimeout(toastTimer);
+            copyToast.classList.add('show');
+            toastTimer = setTimeout(() => copyToast.classList.remove('show'), 2000);
         });
     });
 });
@@ -159,16 +170,43 @@ lbMain.addEventListener('touchend', e => {
         const card = document.createElement('div');
         card.className = 'review-card';
         const initial = r.name.charAt(0).toUpperCase();
-        const avatarContent = r.avatar
-            ? `<img src="${r.avatar}" alt="${r.name}" onerror="this.parentElement.textContent='${initial}'">`
-            : initial;
-        card.innerHTML = `
-            <div class="review-card__stars">${starsSVG(r.rating)}</div>
-            <p class="review-card__text">&laquo;${r.text}&raquo;</p>
-            <div class="review-card__footer">
-                <div class="review-card__avatar">${avatarContent}</div>
-                <div><div class="review-card__name">${r.name}</div><div class="review-card__source">${sourceLabel(r.source)}</div></div>
-            </div>`;
+        // Stars
+        const starsDiv = document.createElement('div');
+        starsDiv.className = 'review-card__stars';
+        starsDiv.innerHTML = starsSVG(r.rating);
+        // Text
+        const textP = document.createElement('p');
+        textP.className = 'review-card__text';
+        textP.textContent = '\u00AB' + r.text + '\u00BB';
+        // Avatar
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'review-card__avatar';
+        if (r.avatar) {
+            const avatarImg = document.createElement('img');
+            avatarImg.src = r.avatar;
+            avatarImg.alt = r.name;
+            avatarImg.addEventListener('error', () => { avatarDiv.textContent = initial; });
+            avatarDiv.appendChild(avatarImg);
+        } else {
+            avatarDiv.textContent = initial;
+        }
+        // Footer
+        const footer = document.createElement('div');
+        footer.className = 'review-card__footer';
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'review-card__name';
+        nameDiv.textContent = r.name;
+        const sourceDiv = document.createElement('div');
+        sourceDiv.className = 'review-card__source';
+        sourceDiv.textContent = sourceLabel(r.source);
+        const infoDiv = document.createElement('div');
+        infoDiv.appendChild(nameDiv);
+        infoDiv.appendChild(sourceDiv);
+        footer.appendChild(avatarDiv);
+        footer.appendChild(infoDiv);
+        card.appendChild(starsDiv);
+        card.appendChild(textP);
+        card.appendChild(footer);
         return card;
     }
 
