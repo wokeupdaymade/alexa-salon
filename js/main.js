@@ -17,11 +17,14 @@ document.getElementById('floatingBtn').addEventListener('click', () => floatingC
 document.addEventListener('click', e => { if (!floatingCta.contains(e.target)) floatingCta.classList.remove('expanded'); });
 
 // ===== Phone copy to clipboard =====
+const copyToast = document.getElementById('copyToast');
+let toastTimer;
 document.querySelectorAll('[data-phone]').forEach(el => {
     el.addEventListener('click', () => {
         navigator.clipboard.writeText(el.dataset.phone).then(() => {
-            const msg = el.parentElement.querySelector('.hero__phone-copied, .contacts__phone-copied');
-            if (msg) { msg.classList.add('show'); setTimeout(() => msg.classList.remove('show'), 1500); }
+            clearTimeout(toastTimer);
+            copyToast.classList.add('show');
+            toastTimer = setTimeout(() => copyToast.classList.remove('show'), 2000);
         });
     });
 });
@@ -156,11 +159,14 @@ lbMain.addEventListener('touchend', e => {
         const card = document.createElement('div');
         card.className = 'review-card';
         const initial = r.name.charAt(0).toUpperCase();
+        const avatarContent = r.avatar
+            ? `<img src="${r.avatar}" alt="${r.name}" onerror="this.parentElement.textContent='${initial}'">`
+            : initial;
         card.innerHTML = `
             <div class="review-card__stars">${starsSVG(r.rating)}</div>
             <p class="review-card__text">&laquo;${r.text}&raquo;</p>
             <div class="review-card__footer">
-                <div class="review-card__avatar">${initial}</div>
+                <div class="review-card__avatar">${avatarContent}</div>
                 <div><div class="review-card__name">${r.name}</div><div class="review-card__source">${sourceLabel(r.source)}</div></div>
             </div>`;
         return card;
@@ -175,24 +181,12 @@ lbMain.addEventListener('touchend', e => {
     track.style.setProperty('--marquee-duration', speed + 's');
 })();
 
-// ===== Maps (Leaflet + OpenStreetMap) =====
-function initMaps() {
-    if (typeof L === 'undefined') return;
 
-    // Branch 1: ул. Чичерина, 37
-    const map1 = L.map('map1', { scrollWheelZoom: false, attributionControl: false }).setView([51.7682, 55.1114], 17);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map1);
-    L.marker([51.7682, 55.1114]).addTo(map1).bindPopup('<b>Алекса</b><br>ул. Чичерина, 37').openPopup();
-
-    // Branch 2: ул. 9 Января, 10
-    const map2 = L.map('map2', { scrollWheelZoom: false, attributionControl: false }).setView([51.7623, 55.0994], 17);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map2);
-    L.marker([51.7623, 55.0994]).addTo(map2).bindPopup('<b>Алекса</b><br>ул. 9 Января, 10').openPopup();
-}
-
-// Wait for Leaflet to load
-if (document.readyState === 'complete') {
-    initMaps();
-} else {
-    window.addEventListener('load', initMaps);
-}
+// ===== Mobile services accordion =====
+document.querySelectorAll('.service-card__title').forEach(title => {
+    title.addEventListener('click', () => {
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            title.closest('.service-card').classList.toggle('accordion-open');
+        }
+    });
+});
